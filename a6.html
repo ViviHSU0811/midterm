@@ -36,6 +36,17 @@
   gtag('config', 'G-LKFRJ2N64F');
 </script>
 
+<script>
+  function show() 
+  {
+    a = parseInt(t1.value)
+    if (a>0) 
+    {
+      document.getElementById("t2").style.fontSize =a+"px"
+    }
+  }
+</script>
+
 </head>
 
 <body>
@@ -67,8 +78,10 @@
 	  </div><!--close banner_image-->		  
       <div id="content">
         <div class="content_item">
-          <h1 class="s4">挑戰題</h1>
+          <h1 class="s4">挑戰題(4分)</h1>
           <hr>
+          <p class="s3">輸入數字：<input id="t1" class="s2" type="text" oninput="show()" size="5"></p>
+          <p id="t2" class="s2">生日快樂</p>
           
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
